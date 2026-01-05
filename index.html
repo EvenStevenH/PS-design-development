@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body
+  class="bg-[#0C122C] bg-[url(images/bg-mobile.png)] lg:bg-[url(images/bg-desktop.png)] h-screen bg-contain flex justify-center items-center bg-bottom bg-no-repeat font-[Raleway]">
+
+  <main class="flex justify-center items-center m-0 text-sm gap-5">
+
+    <!-- component one -->
+    <div class="w-sm bg-[#1D2C67] rounded-xl rounded-tr-[80px] p-[40px] size-fit" id="component-one">
+      <img class="pb-8 " src="images/logo.svg" alt="logo">
+      <div class="flex gap-4 items-stretch" id="component-one-icons">
+        <img class="bg-[#0C122C] w-12 h-12 object-contain p-3 rounded-xl" src="images/icon-document.svg"
+          alt="document icon">
+        <img class="bg-[#0C122C] w-12 h-12 object-contain p-3 rounded-xl" src="images/icon-folder.svg"
+          alt="folder icon">
+        <img class="bg-[#0C122C] w-12 h-12 object-contain p-3 rounded-xl" src="images/icon-upload.svg"
+          alt="upload icon">
+      </div>
+    </div>
+
+    <!-- component two -->
+    <div class="relative self-end w-xl bg-[#1D2C67] rounded-xl p-[40px] size-fit text-[#DDDBFF] p-20"
+      id="component-two">
+      <p class="pb-5">You’ve used <b>815 GB</b> of your storage</p>
+
+      <div
+        class="absolute bg-[#FFFFFE] px-6 py-4 flex items-center rounded-xl rounded-br-none font-bold right-10 -top-10 gap-2"
+        id="storage-remainder">
+        <div
+          class="absolute h-0 border-solid border-[transparent_#FFFFFE_transparent_transparent] border-[0_25px_25px_0] right-0 -bottom-6"
+          id="storage-triangle"></div>
+        <p class="text-black text-4xl font-bold">185</p>
+        <p class="text-[#A7A6AA] uppercase">GB Left</p>
+      </div>
+
+      <div class="bg-[#151D4A] rounded-full mb-2 p-1" id="storage-bar-container">
+        <div class="h-[15px] w-[80%] bg-linear-to-r from-[#FFA399] to-[#FF4D97] rounded-full" id="storage-bar-fill">
+          <div class="absolute bg-[#FAF9F9] h-[10px] w-[10px] rounded-full right-36 top-[50%]" id="storage-bar-circle">
+          </div>
+        </div>
+      </div>
+
+      <class class="flex place-content-between" id="storage-bar-text">
+        <p><b>0 GB</b></p>
+        <p><b>1000 GB</b></p>
+      </class>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
